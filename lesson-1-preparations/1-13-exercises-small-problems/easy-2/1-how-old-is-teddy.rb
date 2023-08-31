@@ -8,8 +8,12 @@
 
 #create age variable
 #create sentence with string interpolation
-
+puts "Name: "
+name = gets.chomp
+if name == ""
+  name = "Teddy"
+end
 age = rand(20..200)
 
-puts "Teddy is #{age} years old!"
+puts "#{name} is #{age} years old!"
 
