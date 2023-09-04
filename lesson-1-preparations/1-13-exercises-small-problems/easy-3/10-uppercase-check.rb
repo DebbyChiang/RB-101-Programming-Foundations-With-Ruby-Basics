@@ -17,7 +17,7 @@
 #   str = str.delete('^a-z0–9')
 #   str == str.upcase
 # end
-
+  
 def uppercase?(string)
   string == string.upcase
 end
