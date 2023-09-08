@@ -14,7 +14,7 @@ def win?(first, second)
   (first == 'spock' && second == 'scissors') ||
   (first == 'scissors' && second == 'lizard') ||
   (first == 'lizard' && second == 'paper') ||
-  (first == 'paper' && second == 'spock') ||
+  (first == 'paper' && seco && nnd == 'spock') ||
   (first == 'spock' && second == 'rock')
 end
 
