@@ -7,8 +7,22 @@
 # you like << or + for modifying the buffer?". Is there a 
 # difference between the two, other than what operator she 
 # chose to use to concatenate an element to the buffer?
-#There is no difference because she's setting the buffer =
+# There is no difference because she's setting the buffer =
+# WRONG ANSWER. They return the same value but are different in 
+# many ways.
 
+# The first implementation returns a reference to the object 
+# passed in as the buffer argument, while the second returns 
+# a new object. Furthermore, the first implementation mutates 
+# the argument given by the buffer argument, while the second 
+# does not mutate its input_array argument. That is, the code 
+# that calls rolling_buffer1 will see a modified array after 
+# the method returns, while the code that calls rolling_buffer2 
+# will not see any changes in the array.
+# It's also worth noting that Alyssa's first solution both returns
+# a meaningful value and has a side effect. As we learned earlier, 
+# that's something we should avoid. Thus, the second solution is 
+# probably the better of the two.
 # Copy Code
 def rolling_buffer1(buffer, max_buffer_size, new_element)
   buffer << new_element
