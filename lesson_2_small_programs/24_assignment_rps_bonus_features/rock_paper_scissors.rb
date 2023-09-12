@@ -14,11 +14,7 @@ def win?(first, second)
   (first == 'spock' && second == 'scissors') ||
   (first == 'scissors' && second == 'lizard') ||
   (first == 'lizard' && second == 'paper') ||
-<<<<<<< HEAD
   (first == 'paper' && second == 'spock') ||
-=======
-  (first == 'paper' && seco && nnd == 'spock') ||
->>>>>>> development
   (first == 'spock' && second == 'rock')
 end
 
